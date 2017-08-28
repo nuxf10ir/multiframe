@@ -1,0 +1,118 @@
+@font-face {
+    font-family:'Berlingske Sans';
+    src:	url('./fonts/BerlingskeSans-Rg.eot');
+    src:	url('./fonts/BerlingskeSans-Rg.eot?#iefix') format('embedded-opentype');
+    src:	url('./fonts/BerlingskeSans-Rg.woff2')format('woff2'),
+    url('./fonts/BerlingskeSans-Rg.woff')format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+.wrapper {
+    max-width: 600px;
+    margin: 2em auto;
+    min-height: 200px;
+    height: auto;
+}
+
+.wrapper h1 {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: 'Berlingske Sans', Georgia, 'Times New Roman', Times, serif;
+}
+
+.buttons_wrapper,
+.result-button_wrapper {
+    display: block;
+    overflow: hidden;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.button {
+    display: block;
+    float: left;
+    height: 40px;
+    border: none;
+    background: #77408c;
+    cursor: pointer;
+    color: #ffffff;
+    outline: none;
+}
+
+.buttons_wrapper .button {
+    width: 150px;
+    margin: 0 25px;
+}
+
+.result-button_wrapper .button {
+    width: 300px;
+    margin: 0 50px;
+}
+
+.button span {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'Berlingske Sans', Georgia, 'Times New Roman', Times, serif;
+}
+
+.buttons_wrapper .button:hover {
+    background: #000000;
+}
+
+.complete_wrapper {
+    display: none;
+}
+
+.complete_wrapper h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'Berlingske Sans', Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.result-text_wrapper {
+    display: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Berlingske Sans', Georgia, 'Times New Roman', Times, serif;
+}
+
+.result-text_wrapper p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.result-text_wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.result-text_wrapper ul li {
+    margin: .5em 0;
+}
+
+.result-text_wrapper ul li:before {
+    content: "● ";
+    color: #77408c;
+    margin: 0 .5em 0 0;
+}
+
+.has_answer .complete_wrapper {
+    display: block;
+}
+
+.has_answer .buttons_wrapper {
+    display: none;
+}
+
+
+.has_result .result-text_wrapper {
+    display: block;
+}
+
+.has_result .result-button_wrapper {
+    display: none;
+}
