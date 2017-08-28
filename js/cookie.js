@@ -1,6 +1,6 @@
 // возвращает cookie с именем name, если есть, если нет, то undefined
 function getCookie(name) {
-  var matches = document.cookie.match(new RegExp(
+  var matches = window.frameElement.ownerDocument.cookie.match(new RegExp(
     "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
   ));
   return matches ? decodeURIComponent(matches[1]) : undefined;
@@ -34,7 +34,7 @@ function setCookie(name, value, options) {
     }
   }
 
-  document.cookie = updatedCookie;
+    window.frameElement.ownerDocument.cookie = updatedCookie;
 }
 
 // удаляет cookie с именем name
