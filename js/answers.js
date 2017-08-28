@@ -13,6 +13,9 @@ function setAnswer () {
 
 }
 
+window.frameElement.height = document.offsetHeight + 100;
+
+
 var buttons = document.querySelectorAll('button.button');
 
 

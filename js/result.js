@@ -105,8 +105,6 @@ function getResult () {
 
     this.parentElement.parentElement.className += " has_result";
 
-    window.frameElement.height = resultNode.offsetHeight + 100;
-
 }
 
 var resultButton = document.querySelector('button.button_type_result');
