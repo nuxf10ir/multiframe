@@ -34,7 +34,7 @@ var SAMPLES_RATE = [3, 1, 2, 6, 7, 5, 9, 8, 4, 10];
 
 
 function getResult () {
-    var answers = getCookie(COOKIE_NAME) || COOKIE_DEFAULT_VALUE,
+    var answers = window.localStorage.getItem(STORE_NAME) || STORE_DEFAULT_VALUE,
         answersArr = [],
         samplesArr = [],
         score = 0,
@@ -101,7 +101,7 @@ function getResult () {
 
     resultNode.innerHTML = resultHTML;
 
-    deleteCookie(COOKIE_NAME);
+    window.localStorage.removeItem(STORE_NAME);
 
     this.parentElement.parentElement.className += " has_result";
 
